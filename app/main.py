@@ -17,15 +17,6 @@ class PRAnalysisRequest(BaseModel):
 async def get_root():
     return {"messg": "hello There"}
 
-@app.post("/analyze-pr")
-async def analyze_pr(request: PRAnalysisRequest):
-    task = analyze_pr_task.delay(
-        repo_url=request.repo_url,
-        pr_number=request.pr_number,
-        github_token=request.github_token
-    )
-    return {"task_id": task.id}
-
 @app.get("/status/{task_id}")
 async def get_status(task_id: str):
     result = AsyncResult(task_id)
