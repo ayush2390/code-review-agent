@@ -1,0 +1,68 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+env1/
+x.py
+venv/
+*.env
+*.env.*
+
+# Cache and temporary files
+*.log
+*.sqlite3
+*.db
+*.pkl
+*.pyc
+.cache/
+.pytest_cache/
+instance/
+*.mypy_cache/
+*.coverage
+.coverage.*
+*.egg-info/
+build/
+dist/
+*.lock
+*.tmp
+pip-wheel-metadata/
+
+# FastAPI auto-generated files
+*.schema.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Docker-related files
+*.env.docker
+.dockerignore
+docker-compose.override.yml
+
+# Node.js (if using frontend)
+node_modules/
+*.node
+
+# Static files (if applicable)
+static/
+media/
+
+# Test-related files
+htmlcov/
+coverage.xml
+junit.xml
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Others
+*.bak
