@@ -11,9 +11,3 @@ class PRAnalysisRequest(BaseModel):
     repo_url: str
     pr_number: int
     github_token: str | None = None
-
-
-@app.get("/")
-async def get_root():
-    return {"messg": "hello There"}
-
